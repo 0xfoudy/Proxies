@@ -21,3 +21,10 @@ Question: Initialization is done via a delegate call, shouldn't the logic contra
 
 **Question 5:** What is the use for the [reinitializer](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/proxy/utils/Initializable.sol#L119)? Provide a minimal example of proper use in Solidity
 - Given that initializer can only be called once (even after an upgrade because the storage variable isInitialized is updated on the proxy side not the logic), we might need to reinitialize in the future to a newer version.
+
+
+My proxies:
+
+Staking 0x9Cc0f3d31bF929Fe136832532a10caBcCbB2c7ce (https://sepolia.etherscan.io/address/0x9cc0f3d31bf929fe136832532a10cabccbb2c7ce#code)
+NFT 0x644EbB155343A53b8B1B80ab6F719aed7e85B34c (https://sepolia.etherscan.io/address/0x644ebb155343a53b8b1b80ab6f719aed7e85b34c#readProxyContract)
+ERC20 0xB15d5CC06015c350E18f1079e5b6d23444042D7e (https://sepolia.etherscan.io/address/0xb15d5cc06015c350e18f1079e5b6d23444042d7e#readProxyContract)
