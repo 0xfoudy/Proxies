@@ -6,7 +6,7 @@ async function main() {
   const NFTFactory = await ethers.getContractFactory("UpgradeableNFTV2");
 
   const NFT = await upgrades.upgradeProxy(PROXY, NFTFactory, {
-    call: "initializeV2"
+    call: "initializeV3"
   });
 
   console.log("PROXY UPGRADED");

